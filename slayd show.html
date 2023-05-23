@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Победитель!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1> Для тебя победитель!!! Открывай BEER и поехали…&#9786; <a href="Games.html">Играть снова</a></h1>
+<div class="slideshow-container">
+    <img src="images/время-выпить-пиво-97900175.jpg">
+    <img src="images/img_3.png">
+    <img src="images/img_2.png">
+    <img src="images/be1.png">
+    <img src="images/be3.jpg">
+    <img src="images/be2.jpg">
+    <img src="images/be4.jpg">
+    <img src="images/be5.png">
+    <img src="images/be6.jpg">
+    <img src="images/be7.jpg">
+    <img src="images/be8.jpg">
+    <img src="images/be9.jpg">
+    <img src="images/be10.jpg">
+    <img src="images/girlll.jpg">
+    <img src="images/img_5.png">
+
+
+    <button class="next">&#10095;</button>
+
+    <audio class="play" controls>
+        <source src="audio/skrudzhi_-_orki_busic.net.mp3" type="audio/ogg">
+
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByTagName("img");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+
+    </script>
+</div>
+<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+<button class="next" onclick="plusSlides(1)">&#10095;</button>
+<h1>P/S: Пробовал применить JS и CSS.</h1>
+</body>
+</html>
